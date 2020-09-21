@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- BUTTONS -->
+    <!-- Button.LoginIn.Auth.Phone -->
+    <color name="colorLoginInAuthPhoneDefault_start">#37474F</color>                                <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthPhoneDefault_center">#37474F</color>                               <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthPhoneDefault_end">#263238</color>                                  <!-- BlueGray 50 900     -->
+    <!-- PRESS -->
+    <color name="colorLoginInAuthPhonePress_start">#37474F</color>                                  <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthPhonePress_center">#37474F</color>                                 <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthPhonePress_end">#FBC02D</color>                                    <!-- Yellow 50 700     -->
+
+    <!-- Button.LoginIn.Auth.Email -->
+    <color name="colorLoginInAuthEmailDefault_start">#37474F</color>                                <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthEmailDefault_center">#37474F</color>                               <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthEmailDefault_end">#263238</color>                                  <!-- BlueGray 50 900     -->
+    <!-- PRESS -->
+    <color name="colorLoginInAuthEmailPress_start">#37474F</color>                                  <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthEmailPress_center">#37474F</color>                                 <!-- BlueGray 50 800     -->
+    <color name="colorLoginInAuthEmailPress_end">#FBC02D</color>                                    <!-- Yellow 50 700     -->
+
+    <!-- Buttons.text AND Buttons.hint -->
+    <color name="colorLoginInAuthPhoneColorText">#FBC02D</color>                                    <!-- Yellow 50 700 -->
+    <color name="colorLoginInAuthEmailColorText">#FBC02D</color>                                    <!-- Yellow 50 700 -->
+</resources>
