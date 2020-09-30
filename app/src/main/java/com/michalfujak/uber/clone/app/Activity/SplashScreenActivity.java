@@ -8,8 +8,10 @@ import android.widget.Toast;
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.auth.api.Auth;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.michalfujak.uber.clone.app.R;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -29,8 +31,10 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        init();
         //
-        SplashScreenActivityStartTimer();
+        // SplashScreenActivityStartTimer();
     }
 
     /**
@@ -44,5 +48,39 @@ public class SplashScreenActivity extends AppCompatActivity {
                     // start Thread.start
                     Toast.makeText(SplashScreenActivity.this, "Splash Screen done!", Toast.LENGTH_LONG).show();
                 });
+    }
+
+    /**
+     * function: init
+     * return null
+     */
+    private void init()
+    {
+        // Call firebase from Phone and Email
+        providers = Arrays.asList(
+                new AuthUI.IdpConfig.PhoneBuilder().build(),
+                new AuthUI.IdpConfig.GoogleBuilder().build()
+        );
+        //
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseLisener = myFirebaseAuth -> {
+            FirebaseUser firebaseUser = myFirebaseAuth.getCurrentUser();
+            if(firebaseUser != null)
+            {
+                SplashScreenActivityStartTimer();
+            }
+            else
+            {
+                showLoginLayout();
+            }
+        };
+    }
+
+    /**
+     * function: showLoginLayout
+     */
+    private void showLoginLayout()
+    {
+        // continue
     }
 }
