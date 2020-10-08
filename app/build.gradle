@@ -47,4 +47,11 @@ dependencies {
     // Firebase UI-Auth
     implementation 'com.firebaseui:firebase-ui-auth:6.2.1'
 
+    // Material google (2.10.2020) (url: https://mvnrepository.com/artifact/com.google.android.material/material/1.3.0-alpha03)
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+
+    // ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
 }

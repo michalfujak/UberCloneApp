@@ -6,11 +6,36 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBarFirebaseUI</item>
     </style>
 
     <!-- ScreenSplash View -->
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/uber_clone_splash_logo</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBarFirebaseUI</item>
+    </style>
+
+    <!-- Theme Login in for FirebaseUI -->
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/firebase_ui_color_accent</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBarFirebaseUI</item>
+
+        <item name="colorButtonNormal">@color/firebase_UI_button_normal</item>
+        <item name="colorControlNormal">@color/firebase_UI_button_control_normal</item>
+        <item name="colorControlActivated">@color/firebase_UI_button_control_active</item>
+        <item name="colorControlHighlight">@color/firebase_UI_button_control_highligh</item>
+
+        <item name="android:textColor">@color/firebase_UI_text_color</item>
+        <item name="android:textColorPrimary">@color/firebase_UI_text_color_primary</item>
+        <item name="android:textColorSecondary">@color/firebase_UI_text_color_secondary</item>
+        <item name="android:textColorHint">@color/firebase_UI_text_hint</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/uber_clone_firebase_ui_background</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
