@@ -39,90 +39,97 @@
             android:orientation="vertical"
             android:padding="5dp"
             />
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:orientation="vertical"
-            >
-            <!-- TextInputLayout Google/Firebase -->
-            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_scroll_view">
+            <!-- Fill Scroll View Register -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textColorHint="@color/color_register_text_input_hint_edittext_first_name_txtcolor"
+                android:padding="5dp"
+                android:orientation="vertical"
                 >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/register_text_input_first_name"
-                    style="@style/register_text_input_first_name_style"
+                <!-- TextInputLayout Google/Firebase -->
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@color/color_register_text_input_edittext_first_name_background"
-                    android:hint="@string/register_text_field_input_first_name"
-                    android:paddingStart="30dp"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:textColor="#FFEB3B"
+                    android:padding="2dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:textColorHint="@color/color_register_text_input_hint_edittext_first_name_txtcolor"
-                    android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
-            <!-- LastName -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textColorHint="@color/color_register_text_input_hint_edittext_last_name_txtcolor"
-                >
-                <com.google.android.material.textfield.TextInputEditText
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/register_text_input_first_name"
+                        style="@style/register_text_input_first_name_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/color_register_text_input_edittext_first_name_background"
+                        android:hint="@string/register_text_field_input_first_name"
+                        android:paddingStart="30dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:textColor="#FFEB3B"
+                        android:textColorHint="@color/color_register_text_input_hint_edittext_first_name_txtcolor"
+                        android:textSize="18sp">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- LastName -->
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingBottom="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingStart="30dp"
-                    android:id="@+id/register_text_input_last_name"
-                    android:hint="@string/register_text_field_input_last_name"
-                    android:background="@color/color_register_text_input_edittext_last_name_background"
-                    android:textColor="#FFEB3B"
-                    android:textSize="18sp"
+                    android:padding="2dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColorHint="@color/color_register_text_input_hint_edittext_last_name_txtcolor"
                     >
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
-            <!-- Phone TextInputLayout -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textColorHint="@color/color_register_text_input_hint_edittext_phone_number_txtcolor"
-                >
-                <!-- Phone / TextInputEditText -->
-                <com.google.android.material.textfield.TextInputEditText
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingStart="30dp"
+                        android:id="@+id/register_text_input_last_name"
+                        android:hint="@string/register_text_field_input_last_name"
+                        android:background="@color/color_register_text_input_edittext_last_name_background"
+                        android:textColor="#FFEB3B"
+                        android:textSize="18sp"
+                        >
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- Phone TextInputLayout -->
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:paddingBottom="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingStart="30dp"
-                    android:id="@+id/register_text_input_phone_number"
-                    android:hint="@string/register_text_field_input_phone_number"
-                    android:textColor="#FFEB3B"
-                    android:background="@color/color_register_text_input_edittext_phone_number_background"
-                    android:textSize="18sp"
+                    android:padding="2dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColorHint="@color/color_register_text_input_hint_edittext_phone_number_txtcolor"
                     >
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
+                    <!-- Phone / TextInputEditText -->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingStart="30dp"
+                        android:id="@+id/register_text_input_phone_number"
+                        android:hint="@string/register_text_field_input_phone_number"
+                        android:textColor="#FFEB3B"
+                        android:background="@color/color_register_text_input_edittext_phone_number_background"
+                        android:textSize="18sp"
+                        >
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 
