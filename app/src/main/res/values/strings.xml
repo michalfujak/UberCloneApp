@@ -3,6 +3,21 @@
     <!-- Buttons.text -->
     <string name="login_in_button_firebase_auth_phone">Sing auth with phone</string>
     <string name="login_in_button_firebase_auth_email">Sing auth with email</string>
-    <!-- url:  https://www.youtube.com/watch?v=wH4gAk0YVPU&t=120s -->
-    <!-- time: 04:40 -->
+
+    <!-- Register layout string -->
+    <string name="register_header_text_view">Vytvorenie nového účtu.</string>                       <!-- EN Let's start with creating your account. -->
+    <!-- Com.Google.Android.Material.TextField.TextInputLayout -->
+    <string name="register_text_field_input_first_name">Krstné meno: </string>                      <!-- EN First name -->
+    <string name="register_text_field_input_last_name">Priezvisko: </string>                        <!-- EN Last name -->
+    <string name="register_text_field_input_phone_number">Telefonné čislo: </string>                <!-- EN Phone Number -->
+    <string name="registre_button_account_continue">Pokračovať!</string>                            <!-- EN Continue -->
+
+    <!-- Alert - Toast -->
+    <string name="register_alert_toast_empty_first_name">Prosím vložte naše krstne meno!</string>           <!-- EN Please enter first name! -->
+    <string name="register_alert_toast_empty_last_name">Prosím vložte naše meno!</string>                   <!-- EN Please enter last name! -->
+    <string name="register_alert_toast_empty_phone_number">Prosím vložte vaše telefonné číslo!</string>     <!-- EN Please enter phone number! -->
+
+    <!-- Registration done -->
+    <string name="register_activity_message_done">Registracia kompletná! </string>                          <!-- EN Registration succesfully! -->
+
 </resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Registrations -->
+    <style name="register_text_input_first_name_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="textColor">#FFFFFF</item>
+        <item name="backgroundSplit">#ffffff</item>
+    </style>
+</resources>

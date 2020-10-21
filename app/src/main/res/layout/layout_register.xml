@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uber_clone_firebase_ui_background"
+    >
+    <!-- LinearLayout Main-Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <!-- LinearLayout Header Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            >
+            <!-- TextView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_text_view_header_main"
+                android:textColor="@color/color_register_header_text_view"
+                android:textSize="24sp"
+                android:text="@string/register_header_text_view"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <!-- Line -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            >
+            <!-- TextInputLayout Google/Firebase -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/color_register_text_input_hint_edittext_first_name_txtcolor"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_text_input_first_name"
+                    style="@style/register_text_input_first_name_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_register_text_input_edittext_first_name_background"
+                    android:hint="@string/register_text_field_input_first_name"
+                    android:paddingStart="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="@color/color_register_text_input_hint_edittext_first_name_txtcolor"
+                    android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!-- LastName -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/color_register_text_input_hint_edittext_last_name_txtcolor"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingStart="30dp"
+                    android:id="@+id/register_text_input_last_name"
+                    android:hint="@string/register_text_field_input_last_name"
+                    android:background="@color/color_register_text_input_edittext_last_name_background"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!-- Phone TextInputLayout -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/color_register_text_input_hint_edittext_phone_number_txtcolor"
+                >
+                <!-- Phone / TextInputEditText -->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingStart="30dp"
+                    android:id="@+id/register_text_input_phone_number"
+                    android:hint="@string/register_text_field_input_phone_number"
+                    android:textColor="#FFEB3B"
+                    android:background="@color/color_register_text_input_edittext_phone_number_background"
+                    android:textSize="18sp"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Button action register -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/color_register_button_continue_txtcolor"
+        android:background="@color/color_register_button_continue_background"
+        android:id="@+id/register_account_create_continue"
+        android:text="@string/registre_button_account_continue"
+        />
+
+</RelativeLayout>

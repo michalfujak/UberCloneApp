@@ -48,4 +48,17 @@
     <color name="firebase_UI_background_start_color">#655502</color>                                <!-- Yellow 50 X700.custom -->
     <color name="firebase_UI_background_center_color">#655502</color>                               <!-- Yellow 50 X700.custom -->
     <color name="firebase_UI_background_end_color">#212121</color>                                  <!-- Gray 50 900 -->
+
+    <!-- Register layout Colors -->
+    <color name="color_register_header_text_view">#B0BEC5</color>                                   <!-- BlueGray 50 200 -->
+    <!-- Register Layout Com.Google.Android.Material.TextField.TextInputEditText -->
+    <color name="color_register_text_input_hint_edittext_first_name_txtcolor">#F9A825</color>       <!-- Yellow 50 800 -->
+    <color name="color_register_text_input_hint_edittext_last_name_txtcolor">#F9A825</color>        <!-- Yellow 50 800 -->
+    <color name="color_register_text_input_hint_edittext_phone_number_txtcolor">#F9A825</color>     <!-- Yellow 50 800 -->
+    <color name="color_register_text_input_edittext_first_name_background">#99263238</color>        <!-- BlueGray 50 900 Opacity 60% -->
+    <color name="color_register_text_input_edittext_last_name_background">#99263238</color>         <!-- BlueGray 50 900 Opacity 60% -->
+    <color name="color_register_text_input_edittext_phone_number_background">#99263238</color>      <!-- BlueGray 50 900 Opacity 60% -->
+    <!-- Register layout Button Account Continue -->
+    <color name="color_register_button_continue_background">#FBC02D</color>                         <!-- Yellow 50 700 -->
+    <color name="color_register_button_continue_txtcolor">#212121</color>                           <!-- Gray 50 900 -->
 </resources>

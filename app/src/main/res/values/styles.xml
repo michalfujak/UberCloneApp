@@ -39,4 +39,16 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <!-- AlertDialog register.theme -->
+    <style name="alertDialogRegister" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- Background -->
+        <item name="android:windowBackground">@drawable/uber_clone_firebase_ui_background</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
 </resources>
